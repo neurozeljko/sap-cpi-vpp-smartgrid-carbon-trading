@@ -465,5 +465,5 @@ curl -i -X POST \
 ## Author
 
 **Željko Popov**  
-*Principal Integration Architect | SAP Integration Suite & Clean Core Specialist*  
+*Integration Architect | SAP Integration Suite & Clean Core Specialist*  
 [GitHub Repositories](https://github.com/neurozeljko)
