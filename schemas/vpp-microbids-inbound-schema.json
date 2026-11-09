@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VPPMicroBidsInboundSchema",
+  "type": "object",
+  "properties": {
+    "gridFeederId": { "type": "string" },
+    "settlementWindow": { "type": "string" },
+    "energyTrades": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tradeId": { "type": "string" },
+          "sourceAssetType": { "type": "string" },
+          "megawattHours": { "type": "number" },
+          "spotPriceEurPerMwh": { "type": "number" },
+          "carbonOffsetFactor": { "type": "number" }
+        },
+        "required": ["tradeId", "megawattHours", "spotPriceEurPerMwh"]
+      }
+    }
+  },
+  "required": ["gridFeederId", "settlementWindow", "energyTrades"]
+}

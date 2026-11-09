@@ -1,0 +1,20 @@
+{
+  "gridFeederId": "FEEDER-VPP-NORDIC-09",
+  "settlementWindow": "2026-11-09T13:00:00Z/13:15:00Z",
+  "energyTrades": [
+    {
+      "tradeId": "TRD-889101",
+      "sourceAssetType": "WIND_TURBINE_OFFSHORE",
+      "megawattHours": 142.50,
+      "spotPriceEurPerMwh": 62.40,
+      "carbonOffsetFactor": 0.48
+    },
+    {
+      "tradeId": "TRD-889102",
+      "sourceAssetType": "BESS_UTILITY_BATTERY",
+      "megawattHours": 35.80,
+      "spotPriceEurPerMwh": 78.10,
+      "carbonOffsetFactor": 0.45
+    }
+  ]
+}

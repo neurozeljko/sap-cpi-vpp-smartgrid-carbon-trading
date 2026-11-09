@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "S4HANAJournalEntryBulkSchema",
+  "type": "object",
+  "properties": {
+    "CompanyCode": { "type": "string" },
+    "DocumentDate": { "type": "string" },
+    "PostingDate": { "type": "string" },
+    "AccountingDocumentType": { "type": "string" },
+    "to_Item": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "GLAccount": { "type": "string" },
+          "AmountInTransactionCurrency": { "type": "number" },
+          "TransactionCurrency": { "type": "string" },
+          "DebitCreditCode": { "type": "string" }
+        },
+        "required": ["GLAccount", "AmountInTransactionCurrency", "DebitCreditCode"]
+      }
+    }
+  },
+  "required": ["CompanyCode", "PostingDate", "to_Item"]
+}
